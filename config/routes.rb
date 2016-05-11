@@ -9,4 +9,6 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :posts, only: [:create, :update, :edit, :destroy]
+
 end
